@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add thttpd
+RUN apk add --no-cache thttpd
 COPY ./thttpd.conf /usr/local/etc/thttpd.conf
 
 USER root
